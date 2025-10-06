@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.local
+.env.*.local
+
+# Build
+dist/
+build/
+
+# Logs
+logs
+*.log
+*.log.*
+*.out
+*.pid
+*.seed
+*.gz
+
+# Coverage / tests
+coverage/
+.nyc_output/
+
+# IDE / éditeur
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# React specific
+arcade-client/node_modules/
+arcade-client/build/
+
+# Server specific
+arcade-server/node_modules/
+arcade-server/dist/
