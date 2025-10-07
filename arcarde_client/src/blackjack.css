@@ -2,3 +2,16 @@
   font-family: 'PixelFont';
   src: url('../assets/fonts/PixelFont.otf');
 }
+
+#awaiting {
+  color: #f0f8ff;
+  font-size: xx-large;
+  display: flex;
+  font-family: 'PixelFont';
+  font-size: clamp(3rem, 8vw, 6rem);
+  text-shadow:
+    0 0 0.5rem #00ff00,
+    0 0 1rem #00ff00,
+    0 0 2rem #00ff00,
+    0 0 4rem #00ff00;
+}
