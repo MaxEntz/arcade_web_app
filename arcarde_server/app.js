@@ -3,11 +3,7 @@ var path = require('path');
 var app = express();
 var server = require('http').createServer(app);
 
-// Sert les fichiers statiques du build
 app.use(express.static(path.join(__dirname, '../arcarde_client/build')));
-
-// Pas besoin de route supplémentaire si tu n'utilises pas React Router
-// Les fichiers seront automatiquement servis
 
 console.log("Server started on port 4141");
 
