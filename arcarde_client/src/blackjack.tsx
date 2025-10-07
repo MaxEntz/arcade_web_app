@@ -2,7 +2,7 @@ import './blackjack.css'
 
 const Blackjack = () => {
 	return (
-        <p>Awaiting players...</p>
+        <p id="awaiting">Awaiting players...</p>
 	)
 }
 

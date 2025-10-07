@@ -10,16 +10,16 @@
   font-family: 'PixelFont';
   font-size: clamp(3rem, 8vw, 6rem);
   text-shadow:
-    0 0 5px #00ff00,
-    0 0 10px #00ff00,
-    0 0 20px #00ff00,
-    0 0 40px #00ff00;
+    0 0 0.5rem #00ff00,
+    0 0 1rem #00ff00,
+    0 0 2rem #00ff00,
+    0 0 4rem #00ff00;
 }
 
 #btn_game {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,12 +27,12 @@
 }
 
 #btn_game button {
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   font-size: clamp(1rem, 8vw, 2rem);
   font-family: 'PixelFont';
   cursor: pointer;
   border-radius: 8px;
-  border: 1px solid #00ff0d;
+  border: 0.1rem solid #00ff0d;
   background-color: #d1d1d100;
   color: #81fa81;
   transition: background-color 0.3s;
@@ -40,11 +40,11 @@
 
 #btn_game button:hover {
   text-shadow:
-    0 0 5px #00ff00,
-    0 0 10px #00ff00,
-    0 0 20px #00ff00;
+    0 0 0.5rem #00ff00,
+    0 0 1rem #00ff00,
+    0 0 2rem #00ff00;
   box-shadow:
-    0 0 5px #00ff00,
-    0 0 10px #00ff00,
-    0 0 20px #00ff00;
+    0 0 0.5rem #00ff00,
+    0 0 1rem #00ff00,
+    0 0 2rem #00ff00;
 }
