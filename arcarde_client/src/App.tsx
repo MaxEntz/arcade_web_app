@@ -1,5 +1,5 @@
 import './App.css'
-import Blackjack from './blackjack'
+import Blackjack from './blackjack/blackjack'
 import { useState } from 'react'
 
 function MyButton({ title, onClick }: { title: string; onClick?: () => void }) {
