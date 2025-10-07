@@ -6,7 +6,5 @@ body {
   background-color: #002002;
   flex-direction: column;
   align-items: center;
-  font-family: 'Courier New', monospace;
-  position: relative;
-  overflow: hidden;
+  justify-items: center;
 }
