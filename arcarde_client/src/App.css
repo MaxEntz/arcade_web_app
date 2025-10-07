@@ -1,44 +1,69 @@
 @font-face {
-    font-family: 'PixelFont';
-    src: url('../assets/fonts/PixelFont.otf');
+  font-family: 'PixelFont';
+  src: url('../assets/fonts/PixelFont.otf');
+}
+
+#main_menu {
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 #brand_name {
   color: #f0f8ff;
-  font-size: xx-large;
-  display: flex;
-  font-family: 'PixelFont';
   font-size: clamp(3rem, 8vw, 6rem);
   text-shadow:
     0 0 0.5rem #00ff00,
     0 0 1rem #00ff00,
     0 0 2rem #00ff00,
     0 0 4rem #00ff00;
+  letter-spacing: 0.1em;
+  margin-bottom: 3rem;
+  animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.6;
+  }
 }
 
 #btn_game {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  gap: 1.5rem;
+  align-items: center;
 }
 
-#btn_game button {
-  padding: 1rem 2rem;
+#auth_section {
+  position: absolute; /* ou 'fixed' si tu veux qu'il reste en haut même au scroll */
+  top: 1rem;
+  right: 1rem;
+  z-index: 3; /* pour être sûr qu'il soit au-dessus des autres éléments */
+}
+
+/* Boutons */
+#btn_game button,
+#auth_section button {
+  padding: 1rem 2.5rem;
   font-size: clamp(1rem, 8vw, 2rem);
   font-family: 'PixelFont';
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 12px;
   border: 0.1rem solid #00ff0d;
-  background-color: #d1d1d100;
+  background-color: transparent;
   color: #81fa81;
-  transition: background-color 0.3s;
+  transition: all 0.25s ease-in-out;
+  box-shadow:
+    0 0 0.5rem #00ff00 inset,
+    0 0 0.5rem #00ff00;
 }
 
-#btn_game button:hover {
+#btn_game button:hover,
+#auth_section button:hover {
   text-shadow:
     0 0 0.5rem #00ff00,
     0 0 1rem #00ff00,
@@ -46,5 +71,7 @@
   box-shadow:
     0 0 0.5rem #00ff00,
     0 0 1rem #00ff00,
-    0 0 2rem #00ff00;
+    0 0 2rem #00ff00,
+    0 0 3rem #00ff00;
+  transform: scale(1.05);
 }

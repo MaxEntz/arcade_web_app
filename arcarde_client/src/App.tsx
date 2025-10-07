@@ -17,12 +17,18 @@ function App() {
 
   return (
     <>
-      <h1 id="brand_name">Arcade Games</h1>
-      <div id="btn_game">
-        <MyButton title="Black Jack" onClick={() => setCurrentGame('blackjack')} />
-        <MyButton title="Snake" />
-        <MyButton title="Russian Roulette" />
-        <MyButton title="Slot Machine" />
+      <div id="main_menu">
+        <h1 id="brand_name">Arcade Games</h1>
+
+        <div id="btn_game">
+          <MyButton title="Black Jack" onClick={() => setCurrentGame('blackjack')} />
+          <MyButton title="Snake" onClick={() => setCurrentGame('blackjack')}/>
+          <MyButton title="Russian Roulette" onClick={() => setCurrentGame('blackjack')}/>
+          <MyButton title="Slot Machine" onClick={() => setCurrentGame('blackjack')}/>
+        </div>
+      </div>
+      <div id="auth_section">
+          <MyButton title="Sign In / Sign Up" onClick={() => setCurrentGame('blackjack')}/>
       </div>
     </>
   )
