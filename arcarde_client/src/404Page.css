@@ -49,6 +49,11 @@ body::after {
   animation: flicker 3s infinite;
 }
 
+#center_error_message {
+  text-align: center;
+  position: relative;
+}
+
 @keyframes flicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     opacity: 1;
