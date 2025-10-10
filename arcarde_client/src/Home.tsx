@@ -1,6 +1,5 @@
+import { useNavigate } from 'react-router-dom';
 import './App.css'
-import Blackjack from './blackjack/blackjack'
-import { useState } from 'react'
 
 function MyButton({ title, onClick }: { title: string; onClick?: () => void }) {
   return (
@@ -9,11 +8,7 @@ function MyButton({ title, onClick }: { title: string; onClick?: () => void }) {
 }
 
 function Home() {
-  const [currentGame, setCurrentGame] = useState<string | null>(null);
-
-  if (currentGame === 'blackjack') {
-    return <Blackjack />;
-  }
+  const navigate = useNavigate();
 
   return (
     <>
@@ -21,14 +16,14 @@ function Home() {
         <h1 id="brand_name">Arcade Games</h1>
 
         <div id="btn_game">
-          <MyButton title="Black Jack" onClick={() => setCurrentGame('blackjack')} />
-          <MyButton title="Snake" onClick={() => setCurrentGame('blackjack')}/>
-          <MyButton title="Russian Roulette" onClick={() => setCurrentGame('blackjack')}/>
-          <MyButton title="Slot Machine" onClick={() => setCurrentGame('blackjack')}/>
+          <MyButton title="Black Jack" onClick={() => navigate('/blackjack')} />
+          <MyButton title="Snake" onClick={() => navigate('/snake')}/>
+          <MyButton title="Russian Roulette" onClick={() => navigate('/roulette')}/>
+          <MyButton title="Slot Machine" onClick={() => navigate('/slots')}/>
         </div>
       </div>
       <div id="auth_section">
-          <MyButton title="Sign In / Sign Up" onClick={() => setCurrentGame('blackjack')}/>
+          <MyButton title="Sign In / Sign Up" onClick={() => navigate('/login')}/>
       </div>
     </>
   )
