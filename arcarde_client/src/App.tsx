@@ -6,6 +6,7 @@ import Snake from "./games/snake/snake";
 import Roulette from "./games/roulette/roulette";
 import Slots from "./games/slots/slots";
 import Login from "./loginPage";
+import TestDev from "./assets/testdev/TestDev";
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/roulette" element={<Roulette />} />
           <Route path="/slots" element={<Slots />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/testdev" element={<TestDev />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>

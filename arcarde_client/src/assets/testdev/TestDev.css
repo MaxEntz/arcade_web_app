@@ -1,0 +1,15 @@
+.testdev-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.testdev-container h1 {
+  color: #81fa81;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.testdev-container p {
+  color: #81fa81;
+  font-size: 1.2rem;
+}
